@@ -1,0 +1,163 @@
+body {
+    background: #ffffff;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main {         
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:70vh;
+}
+
+#main-validar {         
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:70vh;
+    margin:0;
+    color: black;
+}
+
+
+
+/************************************
+HEADER
+*************************************/
+
+header {
+    width: 100%;
+    background: #EC7000;
+    padding: 5px;
+    border-bottom: .4em solid #b15301;
+    margin-bottom: 1.95em;
+    top: 0;
+}
+h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: .7em auto;
+    padding: 10px;
+}
+header img {    
+    padding: .2em;
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+}
+header h1, header h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px #000; color:#FFF;
+}
+
+/*********************************************
+ CORPO, FORMULARIO, LABEL, INPUT, BTN, SELECT, BOTAO
+**********************************************/
+
+#corpo {
+    margin-top: 80px;
+}
+
+#formulario{
+    text-align: left;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 650px;    
+
+}
+
+#formulario .flex_direita {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    flex: 1;
+}
+
+#formulario .flex_esquerda {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#formulario label {
+    line-height: 30px;
+    text-align:left;
+    color:#363636;
+}
+
+#formulario input {
+    padding: 9px;
+    border: 1px solid #CCCCCC;
+    background: #E8EFE4;
+    border-radius: 4px;
+    color:#363636;
+}
+
+#linha-horizontal {
+    margin-top: 30px;
+    width: 650px;
+    border: 1px solid #004b8c;
+}
+
+.btn{
+    text-align: center;
+    padding: 20px;
+}
+
+#formulario select {
+    padding: 9px;
+    border: 1px solid #CCCCCC;
+    background: #E8EFE4;
+    border-radius: 4px;
+    color:#363636;
+}
+
+#formulario .botao {
+    cursor: pointer;
+    text-align: left;
+    margin: 0 0 0 0;
+    color: #FFF;
+    background-color: #EC7000;
+    
+}
+
+#formulario .botao:hover {
+    background-color: #004b8c;
+    
+}
+
+#footer {     
+    padding-top: auto;
+    width: 100%;
+    background: #6c757d;
+    padding: 5px;
+    border-bottom: .4em solid #545b61;
+    margin-bottom: 1.95em;
+    
+    
+}
+
+#footer p, a{
+    color: #ffffff;
+    text-align: center;
+}

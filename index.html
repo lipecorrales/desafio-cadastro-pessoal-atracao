@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Philippe Corrales" />
+    <meta name="description" content="Formulário clássico, Cadastro Pessoal - Atração" />
+    <meta name="keywords" content="HTML5, Formulario." />
+    <title>Banco Itáu | Cadastro Pessoal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="imagens/" href="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="wrapper head">
+            <div>
+                <img id="photo" src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" alt="Logo Itaú" />
+            </div>
+            <div>
+                <h2>Cadastro Pessoal - Atração</h2>
+            </div>
+        </div>
+    </header>    
+    <!-- INICIO Conteúdo Main --> 
+    <main id="main">
+        <!-- INICIO Formulário -->
+        <div id="formulario">                
+            <form name="register" action="validar.html" id="register" onsubmit="cadastrar()">
+                <div class="flex_direita">
+                    <!-- CPF -->
+                    <div class="cpf direita" id="cpf">
+                        <label for="cpf">CPF: (*)</label><br>
+                        <input type="text"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="11" required="required"/>
+                    </div>
+
+                    <!-- Sexo -->
+                    <div class="direita" id="">
+                        <label for="sexo">Sexo:</label><br>
+                        <select name="sexo" id="">
+                            <option value="Selecione">Feminino</option>
+                            <option value="Selecione">Masculino</option>
+                            <option value="Selecione">Cisgênero</option>
+                            <option value="Selecione">Não-Binário</option>
+                            <option value="Selecione">Transgênero</option>
+                            <option value="Selecione">Não optar</option>
+                        </select>
+                    </div>
+
+                    <!-- Número -->
+                    <div class="direita" id="">
+                        <label for="numero">Número: (*)</label><br>
+                        <input type="text" size="25" placeholder="Número" required="required">
+                    </div>
+
+                    <!-- CEP -->
+                    <div class="esquerda" id="">
+                        <label for="cep">Cep:</label><br>
+                        <input type="text" size="25" placeholder="Cep">
+                    </div>
+
+                    <!-- Estado -->
+                    <div class="direita" id="">
+                        <label for="estado">Estado:</label><br>
+                        <input type="text" size="25" placeholder="Estado">
+                    </div>
+
+                    <!-- Telefone Celular -->
+                    <div class="celular direita" id="">
+                        <label for="telefonecelular">Telefone Celular: (*)</label><br>
+                        <input type="text" size="25" placeholder="(00) 0000-0000">
+                    </div>
+                </div>
+
+                
+                <div class="flex_esquerda">
+                    <!-- Nome Completo -->
+                    <div class="esquerda" id="">
+                        <label for="nome">Nome Completo: (*)</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Nome Completo" required="required">
+                    </div>
+
+                    <!-- RG -->    
+                    <div class="rg esquerda" id="">
+                        <label for="rg">RG:</label><br>
+                        <input type="text" placeholder="00.000.000-0">
+                    </div>
+
+                    <!-- Endereço -->
+                    <div class="esquerda" id="">
+                        <label for="endereco">Endereço: (*)</label><br>
+                        <input type="text" size="25" placeholder="Endereço" required="required">
+                    </div>
+
+                    <!-- Bairro -->
+                    <div class="esquerda" id="">
+                        <label for="bairro">Bairro:</label><br>
+                        <input type="text" size="25" placeholder="Endereço">
+                    </div>
+
+                    <!-- Cidade -->
+                    <div class="esquerda" id="">
+                        <label for="cidade">Cidade:</label><br>
+                        <input type="text" size="25" placeholder="Cidade">
+                    </div>
+
+                    <!-- Telefone Fixo -->
+                    <div class="telefone esquerda" id="">
+                        <label for="telefonefixo">Telefone Fixo:</label><br>
+                        <input type="text" placeholder="0000-0000">
+                    </div>                
+                </div>
+
+                <div id="linha-horizontal"></div>
+                
+                <div class="btn">
+                    <input type="submit" value="Cadastrar" class="botao">
+                    <input type="reset" value="Limpar Campos" class="botao">
+                </div>
+                
+            </form>    
+        </div>
+        <!-- FIM Formulário -->
+    </main>
+    <!-- FIM Main -->
+
+    <!-- INICIO Rodapé do site -->
+    <footer id="footer">
+        <p>AGENCIA BANKLINE - TODOS DIREITOS RESERVADOS © 2021 Itaú Unibanco Holding S.A.</p>
+        <p><a href="mailto:philippecorrales@gmail.com">philippecorrales@gmail.com</a></p>
+    </footer>
+    <!-- FIM Footer -->
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
