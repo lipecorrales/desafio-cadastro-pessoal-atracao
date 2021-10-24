@@ -4,7 +4,7 @@ Gama Academy - Transformando Talentos para o Futuro
 
 Projeto > formulario para registrar dados pessoais
 
-Projeto foi feito desenvolvimento as linguagens HTML5, CSS & JavaScript
+Projeto foi feito desenvolvido as linguagens HTML5, CSS & JavaScript
 
 
 Referencias das pesquisas:
