@@ -8,7 +8,7 @@
  * @return true, caso seja um CPF válido; false, caso seja um CPF inválido
  */
 
-function _cpf(cpf) {
+ function _cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g,'');
 
     if (cpf == '') return false;
